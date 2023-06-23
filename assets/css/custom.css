@@ -146,7 +146,7 @@ body{
     font-size: 38px;
     font-weight: 600;
     line-height: 56px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .avatar h5{
     color: #282938;
@@ -154,8 +154,188 @@ body{
     font-weight: 500;
     line-height: 20px;
 }
+
+.carousel-item p{
+    color: #282938;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
 .avatar p{
     color: #282938;
     font-size: 12px;
     font-weight: 500;
+    line-height: unset;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 85%;
+    bottom: auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    color: #7e7e7e;
+    text-align: center;
+    background: unset;
+    border-radius: 50%;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity .15s ease;
+}
+.carousel-control-next i, .carousel-control-prev i{
+    font-size: 28px;
+    padding-top: 5px;
+}
+.carousel-control-next {
+    right: 0;
+}
+.carousel-control-prev {
+    left: unset;
+    right: 70px;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+}
+.carousel-control-prev-icon {
+    background-image: none;
+}
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover, .carousel-control-next.active {
+    color: #fff;
+    background-color: #2405F2;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.cta_left,
+.cta_right{
+    flex-basis: 50%;
+    padding: 95px;
+    padding-bottom: 80px;
+}
+
+.cta_left h1{
+    color: #FFF;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+.cta_left p,
+.cta_right p{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.cta_right h3{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+}
+.cta_right .form-control{
+    padding: 18px 32px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #F4F6FC;
+    border-color: #888AA7;
+    font-weight: 300;
+}
+.cta_right .form-control::placeholder{
+    color: #888AA7;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.btn.form-control{
+    border-radius: 41px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #FCD980 !important;
+}
+.accordion{
+    border: 0px solid ;
+}
+
+
+.accordion-item{
+    border: none;
+    border-top: 2px solid #ECECF1 !important;
+}
+.accordion-item:first-child{
+    border: none;
+    border-top: none !important;
+}
+.accordion-item:first-of-type .accordion-button{
+    border-radius: 0;
+}
+.accordion-button:not(.collapsed){
+    background-color: unset;
+    border: none;
+    box-shadow: none;
+}
+button.accordion-button {
+    padding: 10px;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/+.png);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/+.png);;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+footer .logo img {
+    max-width: 270px;
+    margin:0 0 35px;
+}
+.w-85{
+    width: 85%;
+}
+h5.contact_label{
+    color: #090808;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 20px;
+    margin: 0;
+}
+a.contact_link{
+    color: #090808;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+}
+.footer_des{
+    color: #F4F6FC;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
 }
