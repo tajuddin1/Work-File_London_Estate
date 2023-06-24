@@ -135,6 +135,12 @@ body{
     font-weight: 500;
     line-height: 36px;
 }
+.card_heading{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 30px;
+}
 .card p{
     color: #696974;
     font-size: 16px;
@@ -336,6 +342,39 @@ a.contact_link{
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.heading_5{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 71px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.aboutUs_top p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: justify;
+    max-width: 690px;
+    margin-bottom: 0;
+}
+.aboutUs_top{
+    margin-top: 90px;
+    margin-bottom: 135px;
+}
+.who_we_are{
+    margin-bottom: 50px;
+}
+.number::after {
+    content: '+';
+}
+.number{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
     letter-spacing: 0em;
     text-align: left;
 }
