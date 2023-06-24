@@ -287,6 +287,7 @@ body{
     background-color: unset;
     border: none;
     box-shadow: none;
+    color: #000000;
 }
 button.accordion-button {
     padding: 10px;
@@ -352,6 +353,13 @@ a.contact_link{
     letter-spacing: -0.02em;
     text-align: left;
 }
+.heading_6{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 .aboutUs_top p{
     font-size: 16px;
     font-weight: 400;
@@ -377,4 +385,15 @@ a.contact_link{
     line-height: 56px;
     letter-spacing: 0em;
     text-align: left;
+}
+.card h4{
+font-size: 20px;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+}
+.features_desc{
+    color: #7B7B81;
+    font-weight: 300;
 }
