@@ -387,13 +387,53 @@ a.contact_link{
     text-align: left;
 }
 .card h4{
-font-size: 20px;
-font-weight: 500;
-line-height: 36px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 .features_desc{
     color: #7B7B81;
     font-weight: 300;
+}
+.text_darkblue{
+    color: #282938;
+}
+.contact p{
+    max-width: 865px;
+    margin: auto;
+}
+.form_wrapper{
+    max-width: 960px;
+    background-color: #F4F6FC;
+    padding: 60px;
+    border-radius: 12px;
+    margin: 60px auto;
+}
+.form_wrapper input{
+    height: 50px;
+    padding: 8px 15px;
+    border: 1px solid #0000001F;
+    border-radius: 8px;
+    background: transparent;
+}
+.form_wrapper textarea{
+    padding: 8px 15px;
+    border: 1px solid #0000001F;
+    border-radius: 8px;
+    background: transparent;
+}
+.form_wrapper label{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 6px;
+}
+.form_wrapper input:focus-visible,
+.form_wrapper textarea:focus-visible{
+    outline: none;
+    background-color: transparent;
 }
