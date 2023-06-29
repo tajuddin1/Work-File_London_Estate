@@ -250,7 +250,7 @@
         line-height: 20px;
     }
     .card p {
-        font-size: 15px !important;
+        font-size: 16px !important;
         line-height: 24px;
     }
     .carousel-item p {
@@ -293,8 +293,8 @@
         line-height: 34px;
     }
     .aboutUs_top p {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 20px;
         margin-bottom: 15px;
     }
     section.who_we_are h1 {
@@ -302,7 +302,7 @@
         line-height: 24px;
     }
     section.who_we_are p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .card_heading {
         font-size: 18px;
@@ -314,7 +314,8 @@
         line-height: 34px;
     }
     .our_mission p {
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 22px;
     }
     .hero-content {
         margin-top: 40px;
@@ -334,8 +335,8 @@
     }
     .features_desc {
         color: #6b6b6b;
-        font-weight: 300;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 15px;
     }
     .accordion-body {
         font-size: 16px;
@@ -413,9 +414,7 @@
 }
 
 @media only screen and (max-width: 460px) {
-    .hero-content.w-75.ms-auto {
-        width: 100% !important;
-    }
+
     section.features-hero {
         min-height: 280px !important;
         background-size: cover !important;
@@ -428,14 +427,18 @@
         text-align: right;
     }
     .features-hero .hero-content h1 {
-        font-size: 28px;
+        font-size: 34px;
         line-height: 36px;
         width: 100% !important;
     }
     .features-hero .hero-content p {
         margin-bottom: 30px;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 24px;
+        color: #5B5C81;
+    }
+    .features-hero .hero-content{
+        margin-bottom: 60px;
     }
     h3.mt-2 {
         font-size: 16px;
