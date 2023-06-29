@@ -36,6 +36,7 @@
     .heading_4 {
         font-size: 28px;
         line-height: 38px;
+        margin-top: 0;
     }
     .cta_left, .cta_right {
         padding: 35px;
@@ -215,10 +216,11 @@
         margin-bottom: 20px;
     }
     .card h5 {
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 20px;
     }
     .card p {
-        font-size: 14px;
+        font-size: 15px !important;
         line-height: 24px;
     }
     .carousel-item p {
@@ -288,7 +290,7 @@
         margin-top: 40px;
     }
     section.features-hero {
-        min-height: 450px !important;
+        min-height: 365px !important;
     }
     .heading_6 {
         font-size: 28px;
@@ -323,11 +325,7 @@
         padding: 50px 0;
     }
     .work_section_point h5 {
-        font-size: 12px;
-    }
-    .work_section_point p {
-        font-size: 10px;
-        line-height: 17px;
+        font-size: 14px;
     }
     .work_section_point img {
         width: 30px;
@@ -338,7 +336,8 @@
         margin-top: 10px !important;
     }
     .feature_sec p{
-        font-size: 12px;
+        font-size: 13px !important;
+        line-height: 20px;
     }
     div#carouselExampleInterval {
         margin-top: 20px;
@@ -369,5 +368,65 @@
     }
     .col-12.col-md-12.col-lg-3 img {
         width: 200px;
+    }
+
+    .features-hero .hero-content h1 {
+        font-size: 28px;
+        line-height: 36px;
+        width: 100% !important;
+    }
+    .form_wrapper {
+        padding: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 460px) {
+    .hero-content.w-75.ms-auto {
+        width: 100% !important;
+    }
+    section.features-hero {
+        min-height: 280px !important;
+        background-size: cover !important;
+        background-position: right center;
+    }
+    .features-hero .hero-content h1 {
+        font-size: 28px;
+        line-height: 36px;
+        width: 100% !important;
+    }
+    .features-hero .hero-content p {
+        margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    h3.mt-2 {
+        font-size: 16px;
+    }
+    .form_wrapper {
+        padding: 15px;
+    }
+    .form_wrapper input {
+        height: 40px;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .form_wrapper label {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .form_wrapper textarea {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    section.contact p {
+        font-size: 14px;
+    }
+    .work_section_point h5 {
+        font-size: 14px;
+    }
+    .work_section_point p {
+        font-size: 14px;
+        line-height: 17px;
     }
 }
