@@ -16,7 +16,16 @@ body {
     max-width: 158px;
     margin: 10px 0 20px;
 }
-
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 999;
+    -webkit-transition: top 0.3s;
+    -o-transition: top 0.3s;
+    transition: top 0.3s;
+  }
 .list-item {
     color: #BBBBCB;
     text-decoration: none;
