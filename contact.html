@@ -11,32 +11,51 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" class="css">
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/custom.css" class="css">
+    <link rel="stylesheet" href="assets/css/responsive.css" class="css">
 </head>
 
 <body>
     <div class="root">
         <nav class="navbar">
-           <div class="container">
-                <div class="col-3">
-                    <a href="index.html" class="logo">
-                        <img width="100%" src="assets/images/LondonEstate.png" alt="">
-                    </a>
-                </div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
-                    <ul class="p-0 m-0 d-flex list-unstyled">
-                        <li class="me-4"><a class="list-item" href="index.html">Home</a></li>
-                        <li class="me-4"><a class="list-item" href="about-us.html">About Us</a></li>
-                        <li class="me-4"><a class="list-item" href="features.html">Features</a></li>
-                        <li class="me-4"><a class="list-item" href="work.html">Work</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 d-flex justify-content-end align-items-center">
-                    <div class="w-100 d-flex justify-content-end">
-                        <a class="btn btn-large contact_us" href="contact.html">Contact us</a>
-                    </div>
-                </div>
-           </div>
-        </nav>
+            <div class="container p-0">
+                 <div class="col-3">
+                     <a href="index.html" class="logo">
+                         <img src="assets/images/LondonEstate.png" alt="">
+                     </a>
+                 </div>
+                 <div class="col-6 d-flex justify-content-end align-items-center resp-d-none">
+                     <ul class="p-0 m-0 d-flex list-unstyled">
+                         <li class="me-4"><a class="list-item active" href="index.html">Home</a></li>
+                         <li class="me-4"><a class="list-item" href="about-us.html">About Us</a></li>
+                         <li class="me-4"><a class="list-item" href="features.html">Features</a></li>
+                         <li class="me-4"><a class="list-item" href="work.html">Work</a></li>
+                     </ul>
+                 </div>
+                 <div class="col-3 d-flex justify-content-end align-items-center resp-d-none">
+                     <div class="w-100 d-flex justify-content-end">
+                         <a class="btn btn-large contact_us" href="contact.html">Contact us</a>
+                     </div>
+                 </div>
+                 <div class="mobile-menu">
+                     <div class="barnd-nav">
+                         <div class="nav-icon">
+                             <div id="navIcon" class="">
+                             </div>
+                         </div>
+                     </div>
+                     <div id="leftMenu" class="menu_item_wrapper pt-5">
+                         <ul class="p-0 m-0 d-flex flex-column list-unstyled">
+                             <li><a class="list-item" href="index.html">Home</a></li>
+                             <li><a class="list-item" href="about-us.html">About Us</a></li>
+                             <li><a class="list-item" href="features.html">Features</a></li>
+                             <li><a class="list-item" href="work.html">Work</a></li>
+                             <li><a class="list-item" href="contact.html">Contact Us</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 
+            </div>
+         </nav>
 
 
         <div class="main">
@@ -90,13 +109,13 @@
         <footer style="background-color: #1C1E53; padding-top: 70px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="logo">
                             <img src="assets/images/LondonEstate.png" alt="">
                         </div>
                         <p class="text-white w-85">We are always open to discuss your project and improve your living standards.</p>
                     </div>
-                    <div class="col-6 text-white" style="padding-left: 180px; padding-bottom: 60px;">
+                    <div class="col-12 col-md-6 text-white footer_right">
                         <h1 class="hedding_2 text-white">Lets Talk!</h1>
                         <p class="footer_des">we believe in open communication and dialogue. Our experienced staff are always available to discuss any issues or concerns you may have.</p>
                         <ul class="d-flex list-unstyled">
@@ -108,7 +127,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="row pb-3" style="background-color: #FCD980;">
                             <div class="col-6 ps-4">
                                 <h5 class="contact_label">Email Us at</h5>
@@ -126,17 +145,17 @@
         </footer>
         <section class="footer_last">
             <div class="container">
-                <div class="row py-4">
-                    <div class="col-6 p-0">
-                        <span class="fw-medium">Copyright 2023, LondonEstate.com.pk</span>
+                <div class="row py-2 py-md-4">
+                    <div class="col-12 col-md-6 p-0">
+                        <span class="fw-medium d-block text-center text-md-left">Copyright 2023, LondonEstate.com.pk</span>
                     </div>
-                    <div class="col-6 p-0">
+                    <div class="col-6 p-0 resp-d-none">
                         <ul class="list-unstyled d-flex mb-0 justify-content-end">
                             <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="index.html">Home</a></li>
                             <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="about-us.html">About us</a></li>
                             <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="features.html">Features</a></li>
                             <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="work.html">Work</a></li>
-                            <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="">FAQ</a></li>
+                            <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="#">FAQ</a></li>
                         </ul>
                     </div>
                 </div>

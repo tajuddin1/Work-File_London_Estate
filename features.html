@@ -11,41 +11,60 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" class="css">
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/custom.css" class="css">
+    <link rel="stylesheet" href="assets/css/responsive.css" class="css">
 </head>
 
 <body>
     <div class="root">
         <nav class="navbar">
-           <div class="container">
-                <div class="col-3">
-                    <a href="index.html" class="logo">
-                        <img width="100%" src="assets/images/LondonEstate.png" alt="">
-                    </a>
-                </div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
-                    <ul class="p-0 m-0 d-flex list-unstyled">
-                        <li class="me-4"><a class="list-item" href="index.html">Home</a></li>
-                        <li class="me-4"><a class="list-item" href="about-us.html">About Us</a></li>
-                        <li class="me-4"><a class="list-item active" href="features.html">Features</a></li>
-                        <li class="me-4"><a class="list-item" href="work.html">Work</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 d-flex justify-content-end align-items-center">
-                    <div class="w-100 d-flex justify-content-end">
-                        <a class="btn btn-large contact_us" href="contact.html">Contact us</a>
-                    </div>
-                </div>
-           </div>
-        </nav>
+            <div class="container p-0">
+                 <div class="col-3">
+                     <a href="index.html" class="logo">
+                         <img src="assets/images/LondonEstate.png" alt="">
+                     </a>
+                 </div>
+                 <div class="col-6 d-flex justify-content-end align-items-center resp-d-none">
+                     <ul class="p-0 m-0 d-flex list-unstyled">
+                         <li class="me-4"><a class="list-item active" href="index.html">Home</a></li>
+                         <li class="me-4"><a class="list-item" href="about-us.html">About Us</a></li>
+                         <li class="me-4"><a class="list-item" href="features.html">Features</a></li>
+                         <li class="me-4"><a class="list-item" href="work.html">Work</a></li>
+                     </ul>
+                 </div>
+                 <div class="col-3 d-flex justify-content-end align-items-center resp-d-none">
+                     <div class="w-100 d-flex justify-content-end">
+                         <a class="btn btn-large contact_us" href="contact.html">Contact us</a>
+                     </div>
+                 </div>
+                 <div class="mobile-menu">
+                     <div class="barnd-nav">
+                         <div class="nav-icon">
+                             <div id="navIcon" class="">
+                             </div>
+                         </div>
+                     </div>
+                     <div id="leftMenu" class="menu_item_wrapper pt-5">
+                         <ul class="p-0 m-0 d-flex flex-column list-unstyled">
+                             <li><a class="list-item" href="index.html">Home</a></li>
+                             <li><a class="list-item" href="about-us.html">About Us</a></li>
+                             <li><a class="list-item" href="features.html">Features</a></li>
+                             <li><a class="list-item" href="work.html">Work</a></li>
+                             <li><a class="list-item" href="contact.html">Contact Us</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 
+            </div>
+         </nav>
 
 
         <div class="main">
-            <section style="background-image: url(assets/images/unsplash_jTCLppdwSEc.png); min-height: 760px; background-size: contain; background-repeat: no-repeat;">
+            <section class="features-hero" style="background-image: url(assets/images/unsplash_jTCLppdwSEc.png); min-height: 760px; background-size: contain; background-repeat: no-repeat;">
                 <div class="container">
                     <div class="row">
                         <div class="col-6"></div>
                         <div class="col-6">
-                            <div class="hero-content w-75 ms-auto">
+                            <div class="hero-content w-100 w-md75 ms-auto">
                                 <h1 class="text-center w-75 mx-auto mb-3">Looking for the perfect home?</h1>
                                 <p class="text-center mb-4">With London Estate, you can find the perfect abode with ease - because we offer features like no other!</p>
                                 <a class="btn btn-large contact_us mx-auto" href="work.html">View our work</a>
@@ -58,7 +77,7 @@
                 <div class="container">
                     <h1 class="text-center fw-medium hedding_2 ">The benefits of working <br> with our team</h1>
                     <div class="row py-4 justify-content-center">
-                        <div class="col-4 d-flex">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex">
                             <div class="card border-0 rounded-0 p-4" style="background-color: #F4F6FC;">
                                 <div>
                                     <img src="assets/images/note.png" alt="">
@@ -67,7 +86,7 @@
                                 <p class="fw-normal" style="font-size: 14px;">Real estate is a lucrative industry, and it's no wonder that more and more people are looking to get involved. But with so many resources available, it can be hard to know where to start. Luckily, London Estate can help you quickly find the best real estate information</p>
                             </div>
                         </div>
-                        <div class="col-4 d-flex">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex">
                             <div class="card border-0 rounded-0 p-4" style="background-color: #F4F6FC;">
                                 <div>
                                     <img src="assets/images/pencil.png" alt="">
@@ -76,7 +95,7 @@
                                 <p class="fw-normal" style="font-size: 14px;">Real estate is a competitive industry, and having the right tools can make all the difference. To stay ahead of the game . key components for improved efficiency in real estate: automation, optimization, scalability, analytics, collaboration, accuracy, responsiveness, engagement, automation and personalization.</p>
                             </div>
                         </div>
-                        <div class="col-4 d-flex">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex">
                             <div class="card border-0 rounded-0 p-4" style="background-color: #F4F6FC;">
                                 <div>
                                     <img src="assets/images/group.png" alt="">
@@ -89,15 +108,15 @@
                 </div>
             </section>
             <section class="py-5">
-                <div class="container py-5">
-                    <div class="row px-5">
-                        <div class="col-7 pe-5">
-                            <span class="fw-medium">Use Client-first</span>
+                <div class="container py-0 py-md-3 py-lg-5">
+                    <div class="row px-0 px-xl-5">
+                        <div class="col-12 col-md-7 pe-0 pe-md-5">
+                            <span class="fw-medium features-label">Use Client-first</span>
                             <h1 class="heading_6 mt-2">it's time to switch to a client-first approach in real estate.</h1>
-                            <p>Are you tired of wasting time and energy trying to find the perfect property for your clients? Then it's time to switch to a client-first approach in real estate. With this approach, you can focus on what matters most - finding the perfect property for your clients quickly and easily. Let us help you put your clients' needs first with our client-first approach!</p>
+                            <p class="features_desc">Are you tired of wasting time and energy trying to find the perfect property for your clients? Then it's time to switch to a client-first approach in real estate. With this approach, you can focus on what matters most - finding the perfect property for your clients quickly and easily. Let us help you put your clients' needs first with our client-first approach!</p>
                         </div>
-                        <div class="col-5 d-flex justify-content-end align-items-center">
-                            <div>
+                        <div class="col-12 col-md-5 d-flex justify-content-end align-items-center">
+                            <div class="w-100 w-md-auto">
                                 <img width="100%" src="assets/images/man-explaining-problems-to-faceless-psychologist-7176030.png" alt="">
                             </div>
                         </div>
@@ -105,15 +124,15 @@
                 </div>
             </section>
             <section class="py-5" style="background-color: #F4F6FC;">
-                <div class="container py-5">
-                    <div class="row px-5">
-                        <div class="col-5 d-flex justify-content-start align-items-center">
-                            <div>
+                <div class="container py-0 py-md-3 py-lg-5">
+                    <div class="row px-0 px-xl-5 flex-column-reverse flex-md-row">
+                        <div class="col-12 col-md-5 d-flex justify-content-start align-items-center">
+                            <div class="w-100 w-md-auto">
                                 <img width="100%" src="assets/images/photo-of-man-holding-a-book-927022.png" alt="">
                             </div>
                         </div>
-                        <div class="col-7 ps-5">
-                            <span class="fw-medium">Free Revision Rounds</span>
+                        <div class="col-12 col-md-7 pe-0 pe-md-5 ps-3 ps-md-5 mt-2 mt-md-0">
+                            <span class="fw-medium features-label">Free Revision Rounds</span>
                             <h1 class="heading_6 mt-2">Make your home the best it can be with free revision rounds from the experts in real estate.</h1>
                             <p class="features_desc">Make your home the best it can be with free revision rounds from the experts in real estate. With our professional guidance and top-notch service, you can rest assured that your home is in the best hands. Enjoy a stress-free process and feel confident knowing that you're getting the most out of your investment.</p>
                         </div>
@@ -121,15 +140,15 @@
                 </div>
             </section>
             <section class="py-5">
-                <div class="container py-5">
-                    <div class="row px-5">
-                        <div class="col-7 pe-5">
-                            <span class="fw-medium">24/7 Support</span>
+                <div class="container py-0 py-md-3 py-lg-5">
+                    <div class="row px-0 px-xl-5">
+                        <div class="col-12 col-md-7 pe-0 pe-md-5">
+                            <span class="fw-medium features-label">24/7 Support</span>
                             <h1 class="heading_6 mt-2">Working with us, you will be getting 24/7 priority support</h1>
                             <p class="features_desc">Here at London Estate, we understand that our clients' needs are of the utmost importance. That's why we offer 24/7 priority support for all our customers. With us, you can rest assured that your request will be addressed quickly and efficiently by experienced professionals who are dedicated to providing the best service possible. We prioritize customer satisfaction above all else and strive to give you the best experience possible.</p>
                         </div>
-                        <div class="col-5 d-flex justify-content-end align-items-center">
-                            <div>
+                        <div class="col-12 col-md-5 d-flex justify-content-end align-items-center">
+                            <div class="w-100 w-md-auto">
                                 <img width="100%" src="assets/images/a-man-working-in-a-call-center-8867431.png" alt="">
                             </div>
                         </div>
@@ -137,15 +156,15 @@
                 </div>
             </section>
             <section class="py-5" style="background-color: #F4F6FC;">
-                <div class="container py-5">
-                    <div class="row px-5">
-                        <div class="col-5 d-flex justify-content-start align-items-center">
-                            <div>
+                <div class="container py-0 py-md-3 py-lg-5">
+                    <div class="row px-0 px-xl-5 flex-column-reverse flex-md-row">
+                        <div class="col-12 col-md-5 d-flex justify-content-start align-items-center">
+                            <div class="w-100 w-md-auto">
                                 <img width="100%" src="assets/images/person-using-macbook-pro-3861964.png" alt="">
                             </div>
                         </div>
-                        <div class="col-7 ps-5">
-                            <span class="fw-medium">Quick Delivery</span>
+                        <div class="col-12 col-md-7 ps-3 ps-md-5 mt-3 mt-md-0">
+                            <span class="fw-medium features-label">Quick Delivery</span>
                             <h1 class="heading_6 mt-2">Guaranteed delivery is an essential part of any real estate</h1>
                             <p class="features_desc">Guaranteed delivery is an essential part of any real estate . With the help of London Estate, buyers and sellers can ensure that their properties are delivered on time and in the condition they expect. From tracking progress to evaluating repairs, we  make it easier for agents to guarantee timely delivery and keep all parties involved informed throughout the process.</p>
                         </div>
@@ -155,11 +174,11 @@
             <section class="py-5">
                 <div class="container">
                     <div class="row pt-5">
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <h1 class="heading_4 px-3 mt-0">Frequently <br>asked questions</h1>
                             <a class="ms-3 btn_2" style="color: #2405F2;" href="contact.html">Contact us for more info</a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                   <h2 class="accordion-header">
@@ -238,13 +257,13 @@
         <footer style="background-color: #1C1E53; padding-top: 70px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="logo">
                             <img src="assets/images/LondonEstate.png" alt="">
                         </div>
                         <p class="text-white w-85">We are always open to discuss your project and improve your living standards.</p>
                     </div>
-                    <div class="col-6 text-white" style="padding-left: 180px; padding-bottom: 60px;">
+                    <div class="col-12 col-md-6 text-white footer_right">
                         <h1 class="hedding_2 text-white">Lets Talk!</h1>
                         <p class="footer_des">we believe in open communication and dialogue. Our experienced staff are always available to discuss any issues or concerns you may have.</p>
                         <ul class="d-flex list-unstyled">
@@ -256,7 +275,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="row pb-3" style="background-color: #FCD980;">
                             <div class="col-6 ps-4">
                                 <h5 class="contact_label">Email Us at</h5>
@@ -274,11 +293,11 @@
         </footer>
         <section class="footer_last">
             <div class="container">
-                <div class="row py-4">
-                    <div class="col-6 p-0">
-                        <span class="fw-medium">Copyright 2023, LondonEstate.com.pk</span>
+                <div class="row py-2 py-md-4">
+                    <div class="col-12 col-md-6 p-0">
+                        <span class="fw-medium d-block text-center text-md-left">Copyright 2023, LondonEstate.com.pk</span>
                     </div>
-                    <div class="col-6 p-0">
+                    <div class="col-6 p-0 resp-d-none">
                         <ul class="list-unstyled d-flex mb-0 justify-content-end">
                             <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="index.html">Home</a></li>
                             <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="about-us.html">About us</a></li>

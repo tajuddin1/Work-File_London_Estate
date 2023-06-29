@@ -11,18 +11,19 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" class="css">
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/custom.css" class="css">
+    <link rel="stylesheet" href="assets/css/responsive.css" class="css">
 </head>
 
 <body>
     <div class="root">
         <nav class="navbar">
-           <div class="container">
+           <div class="container p-0">
                 <div class="col-3">
                     <a href="index.html" class="logo">
                         <img src="assets/images/LondonEstate.png" alt="">
                     </a>
                 </div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
+                <div class="col-6 d-flex justify-content-end align-items-center resp-d-none">
                     <ul class="p-0 m-0 d-flex list-unstyled">
                         <li class="me-4"><a class="list-item active" href="index.html">Home</a></li>
                         <li class="me-4"><a class="list-item" href="about-us.html">About Us</a></li>
@@ -30,19 +31,37 @@
                         <li class="me-4"><a class="list-item" href="work.html">Work</a></li>
                     </ul>
                 </div>
-                <div class="col-3 d-flex justify-content-end align-items-center">
+                <div class="col-3 d-flex justify-content-end align-items-center resp-d-none">
                     <div class="w-100 d-flex justify-content-end">
                         <a class="btn btn-large contact_us" href="contact.html">Contact us</a>
                     </div>
                 </div>
+                <div class="mobile-menu">
+                    <div class="barnd-nav">
+                        <div class="nav-icon">
+                            <div id="navIcon" class="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="leftMenu" class="menu_item_wrapper pt-5">
+                        <ul class="p-0 m-0 d-flex flex-column list-unstyled">
+                            <li><a class="list-item" href="index.html">Home</a></li>
+                            <li><a class="list-item" href="about-us.html">About Us</a></li>
+                            <li><a class="list-item" href="features.html">Features</a></li>
+                            <li><a class="list-item" href="work.html">Work</a></li>
+                            <li><a class="list-item" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
            </div>
         </nav>
         <div class="main">
             <section class="hero-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6"></div>
-                        <div class="col-6">
+                        <div class="col-0 col-md-6 col-lg-6"></div>
+                        <div class="col-12 col-md-6 col-lg-6">
                             <div class="hero-content">
                                 <h1>The Best Way to Find Your Dream Home</h1>
                                 <p>Finding your dream home can be a daunting task, but with the right resources and assistance, it is possible to make your dream a reality.</p>
@@ -55,15 +74,15 @@
                     </div>
                 </div>
             </section>
-            <section style="background-color: #F4F6FC; padding: 100px 0;">
+            <section class="how_we_work">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6 work_section">
-                            <h1 class="mb-4 mt-5">How we work</h1>
+                        <div class="col-12 col-md-12 col-lg-6 work_section">
+                            <h1 class="mb-2 mb-md-4 mt-0 mt-lg-5">How we work</h1>
                             <a class="btn_2" style="font-size: 18px;" href="contact.html">Get in touch with us<img class="ms-2" src="assets/images/RightArrow.png" alt="" srcset=""></a>
                             <p class="mt-4">Real estate is a complex and ever-evolving industry. At London Estate, we strive to provide our clients with the best service possible. We work diligently to ensure our clients are satisfied and their needs are met.</p>
                         </div>
-                        <div class="col-6 ">
+                        <div class="col-12 col-md-12 col-lg-6">
                             <div class="row row-gap-5">
                                 <div class="col-6 work_section_point">
                                     <img class="mb-2" src="assets/images/P_1.png" alt="">
@@ -93,14 +112,14 @@
             <section>
                 <div class="container">
                     <div class="row mt-4">
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <h1 class="hedding_2">View our projects</h1>
                         </div>
-                        <div class="col-4 d-flex justify-content-end align-items-center">
-                            <a class="btn_2" href="#">View More<img class="ms-2" src="assets/images/RightArrow.png" alt=""></a>
+                        <div class="col-12 col-md-4 d-flex justify-content-start justify-content-md-end align-items-center">
+                            <a class="btn_2" href="work.html">View More<img class="ms-2" src="assets/images/RightArrow.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="row" style="margin: 100px 0;">
+                    <div class="row resp-d-none" style="margin: 100px 0;">
                         <div class="col-8">
                             <div class="position-relative" style="background-image: linear-gradient(#EAEDEB , #C7D9E5);">
                                 <div class="d-flex justify-content-start flex-column" style="padding: 80px">
@@ -112,7 +131,7 @@
                                     <div class="slider_content" style="padding: 50px 50px 75px;">
                                         <h1>"Your Dream Home Awaits Unlock the Possibilities with Us!"</h1>
                                         <p>Are you looking for a real estate that can help you find your dream property? Look no further our portfolio of properties is the perfect solution to all your real estate needs!</p>
-                                        <a class="btn_2" style="color: #FCD980;" href="#">View More<img class="ms-2" src="assets/images/Arrow2.png" alt=""></a>
+                                        <a class="btn_2" style="color: #FCD980;" href="work.html">View More<img class="ms-2" src="assets/images/Arrow2.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +145,7 @@
                                     <div class="position-absolute" style="background-image: linear-gradient(#1c1e539f, #1c1e53b0); top:0; height: 100%; display: flex; align-items: end;">
                                         <div class="" style="padding: 40px">
                                             <h1 class="fs-4 text-white">Make your dream home become a reality!</h1>
-                                            <a class="btn_2" style="color: #FCD980;" href="#">View portfolio<img class="ms-2" src="assets/images/Arrow2.png" alt=""></a>
+                                            <a class="btn_2" style="color: #FCD980;" href="work.html">View portfolio<img class="ms-2" src="assets/images/Arrow2.png" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
@@ -140,51 +159,94 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Only For Mobile Layout View -->
+                    <div class="row d-md-none d-lg-none">
+                        <div class="col-12 p-0 my-4">
+                            <div> 
+                                <div class="position-relative">
+                                    <div class="w-100" style="border-radius: 25px; background-color: #FFF; padding: 1.5rem 32px!important ">
+                                        <img width="100%" src="assets/images/unsplash_MAnVoJlQUvg.png" alt="">
+                                    </div>
+                                    <div class="position-absolute" style="background-image: linear-gradient(#1c1e5354, #1c1e5352); top:0; height: 100%; display: flex; align-items: end;">
+                                        <div class="" style="padding: 40px">
+                                            <h1 class="fs-4 text-white">"Your Dream Home Awaits Unlock the Possibilities with Us!"</h1>
+                                            <a class="btn_2" style="color: #FCD980;" href="work.html">View More<img class="ms-2" src="assets/images/Arrow2.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 mb-4">
+                            <div> 
+                                <div class="position-relative">
+                                    <div class="w-100">
+                                        <img width="100%" src="assets/images/unsplash_2gDwlIim3Uw.png" alt="">
+                                    </div>
+                                    <div class="position-absolute" style="background-image: linear-gradient(#1c1e539f, #1c1e53b0); top:0; height: 100%; display: flex; align-items: end;">
+                                        <div class="" style="padding: 40px">
+                                            <h1 class="fs-4 text-white">Make your dream home become a reality!</h1>
+                                            <a class="btn_2" style="color: #FCD980;" href="work.html">View portfolio<img class="ms-2" src="assets/images/Arrow2.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 mb-4">
+                            <div> 
+                                <div class="position-relative">
+                                    <div class="w-100" >
+                                        <img style="border-radius: 7px;" width="100%" src="assets/images/unsplash_2gDwlIim3Uw.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section style="background-color: #F4F6FC; padding: 50px 0;">
+            <section class="feature_sec" style="background-color: #F4F6FC; padding: 50px 0;">
                 <div class="container">
                     <p class="text-center" style="font-weight: 500;">Features</p>
                     <h1 class="heading_3">From spacious rooms to luxurious amenities, it's the perfect place to call home!</h1>
                     <p class="text-center" style="font-weight: 500;">Real estate is an ever-changing industry, and potential buyers need to have a comprehensive knowledge of the features that come with a property. London Estate have these key features in mind, you'll be able to make an informed decision about your next real estate purchase.</p>
-                    <div class="row row-gap-4 py-5">
-                        <div class="col-4">
-                            <div class="card p-5 border-0">
+                    <div class="row row-gap-4 py-3 py-md-5">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card p-4 p-md-4 p-xl-5 border-0">
                                 <div class="mb-2"><img class="mb-2" src="assets/images/location.png" alt=""></div>
                                 <h5>location</h5>
                                 <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </p>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card p-5 border-0">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card p-4 p-md-4 p-xl-5 border-0">
                                 <div class="mb-2"><img class="mb-2" src="assets/images/shield.png" alt=""></div>
                                 <h5>amenities</h5>
                                 <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </p>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card p-5 border-0">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card p-4 p-md-4 p-xl-5 border-0">
                                 <div class="mb-2"><img class="mb-2" src="assets/images/tag.png" alt=""></div>
                                 <h5>price point</h5>
                                 <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </p>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card p-5 border-0">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card p-4 p-md-4 p-xl-5 border-0">
                                 <div class="mb-2"><img class="mb-2" src="assets/images/Vector.png" alt=""></div>
                                 <h5>size</h5>
                                 <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </p>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card p-5 border-0">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card p-4 p-md-4 p-xl-5 border-0">
                                 <div class="mb-2"><img class="mb-2" src="assets/images/question-mark.png" alt=""></div>
                                 <h5>condition</h5>
                                 <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </p>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card p-5 border-0">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card p-4 p-md-4 p-xl-5 border-0">
                                 <div class="mb-2"><img class="mb-2" src="assets/images/note.png" alt=""></div>
                                 <h5>return on investment</h5>
                                 <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </p>
@@ -196,11 +258,11 @@
             <section>
                 <div class="container">
                     <div class="row mt-5">
-                        <div class="col-4">
-                            <h1 class="heading_4 px-3">What our clients say about us</h1>
-                            <p class=" px-3">We are proud that our clients are consistently leaving us glowing reviews and testimonials.</p>
+                        <div class="col-12 col-md-4">
+                            <h1 class="heading_4 px-0 px-md-3">What our clients say about us</h1>
+                            <p class="px-0 px-md-3">We are proud that our clients are consistently leaving us glowing reviews and testimonials.</p>
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
@@ -268,7 +330,7 @@
             <section>
                 <div class="container">
                     <div class="row mt-3 pt-5 call-to-action">
-                        <div class="col-12 d-flex">
+                        <div class="col-12 d-flex flex-column flex-md-row">
                             <div class="cta_left" style="background-image: linear-gradient(#1C1E5380, #1C1E5380),url(assets/images/woman-writing-on-paper-3228878.png);">
                                 <h1>Let's find a solution to your query!</h1>
                                 <p>Are you ready to take your Home Dream to the next level? Let's make it happen with our  personalised inquiry services - crafted just for you!</p>
@@ -280,7 +342,7 @@
                                     <input class="form-control mb-3" type="text" placeholder="Your Name">
                                     <input class="form-control mb-3" type="email" placeholder="Email">
                                     <input class="form-control mb-4" type="text" placeholder="Your Mobile Number">
-                                    <button class="btn btn-large bg-warning w-100 mb-3 form-control">Send an Inquiry</button>
+                                    <button class="btn btn-large bg-warning w-100 mb-3 form-control" type="submit">Send an Inquiry</button>
                                     <a class="btn_2 d-block text-center" style="color: #ffffff;" href="#">Get in touch with us<img class="ms-2" src="assets/images/Arrow _W.png" alt=""></a>
                                 </form>
                             </div>
@@ -291,11 +353,11 @@
             <section class="py-5">
                 <div class="container">
                     <div class="row mt-5 pt-5">
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <h1 class="heading_4 px-3 mt-0">Frequently <br>asked questions</h1>
                             <a class="ms-3 btn_2" style="color: #2405F2;" href="#">Contact us for more info</a>
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                   <h2 class="accordion-header">
@@ -366,13 +428,13 @@
         <footer style="background-color: #1C1E53; padding-top: 70px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="logo">
                             <img src="assets/images/LondonEstate.png" alt="">
                         </div>
                         <p class="text-white w-85">We are always open to discuss your project and improve your living standards.</p>
                     </div>
-                    <div class="col-6 text-white" style="padding-left: 180px; padding-bottom: 60px;">
+                    <div class="col-12 col-md-6 text-white footer_right">
                         <h1 class="hedding_2 text-white">Lets Talk!</h1>
                         <p class="footer_des">we believe in open communication and dialogue. Our experienced staff are always available to discuss any issues or concerns you may have.</p>
                         <ul class="d-flex list-unstyled">
@@ -384,7 +446,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="row pb-3" style="background-color: #FCD980;">
                             <div class="col-6 ps-4">
                                 <h5 class="contact_label">Email Us at</h5>
@@ -402,11 +464,11 @@
         </footer>
         <section class="footer_last">
             <div class="container">
-                <div class="row py-4">
-                    <div class="col-6 p-0">
-                        <span class="fw-medium">Copyright 2023, LondonEstate.com.pk</span>
+                <div class="row py-2 py-md-4">
+                    <div class="col-12 col-md-6 p-0">
+                        <span class="fw-medium d-block text-center text-md-left">Copyright 2023, LondonEstate.com.pk</span>
                     </div>
-                    <div class="col-6 p-0">
+                    <div class="col-6 p-0 resp-d-none">
                         <ul class="list-unstyled d-flex mb-0 justify-content-end">
                             <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="index.html">Home</a></li>
                             <li class="ms-4"><a class="text-dark text-decoration-none fw-medium" href="about-us.html">About us</a></li>
@@ -422,6 +484,7 @@
 
 
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
