@@ -130,10 +130,19 @@
         position: relative;
         width: 45px;
         height: 45px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         z-index: 9999;
     }
     #navIcon::before {
@@ -141,9 +150,15 @@
         width: 35px;
         height: 3px;
         background: rgb(255 255 255);
-        box-sizing: border-box;
-        transform: translateY(-10px);
-        box-shadow: 0 12px #ffffff;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+        -webkit-box-shadow: 0 12px #ffffff;
+                box-shadow: 0 12px #ffffff;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
         transition: 0.4s ease;
     }
     #navIcon::after {
@@ -151,7 +166,11 @@
         width: 35px;
         height: 3px;
         background: rgb(255 255 255);
-        transform: translateY(11px);
+        -webkit-transform: translateY(11px);
+            -ms-transform: translateY(11px);
+                transform: translateY(11px);
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
         transition: 0.4s ease;
     }
     .menu_item_wrapper {
@@ -163,6 +182,8 @@
         width: 70%;
         height: 100%;
         background: #ffffff;
+        -webkit-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
         transition: 0.6s ease;
     }
     .mobile-menu {
@@ -172,13 +193,22 @@
         overflow: hidden;
     }
     #navIcon.active::before {
-        transform: translateY(0px) rotate(-45deg);
-        box-shadow: none;
+        -webkit-transform: translateY(0px) rotate(-45deg);
+            -ms-transform: translateY(0px) rotate(-45deg);
+                transform: translateY(0px) rotate(-45deg);
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
         transition: 0.4s ease;
     }
     #navIcon.active::after {
-        transform: translateY(-3px) rotate(45deg);
+        -webkit-transform: translateY(-3px) rotate(45deg);
+            -ms-transform: translateY(-3px) rotate(45deg);
+                transform: translateY(-3px) rotate(45deg);
         background: #ffffff;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
         transition: 0.4s ease;
     }
     .menu_item_wrapper.fitMenu {
