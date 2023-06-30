@@ -246,17 +246,17 @@
         margin-bottom: 20px;
     }
     .card h5 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 20px;
     }
     .card p {
         font-size: 16px !important;
         line-height: 24px;
     }
-    .carousel-item p {
+    /* .carousel-item p {
         font-size: 14px;
         line-height: 24px;
-    }
+    } */
     .avatar p {
         font-size: 10px;
         font-weight: 500;
@@ -463,7 +463,7 @@
         font-size: 14px;
     }
     .work_section_point h5 {
-        font-size: 16px;
+        font-size: 20px;
     }
     .work_section_point p {
         font-size: 15px;
