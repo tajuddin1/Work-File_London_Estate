@@ -254,7 +254,7 @@
         line-height: 24px;
     }
     .carousel-item p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 24px;
     }
     .avatar p {
@@ -413,7 +413,7 @@
     
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 540px) {
 
     section.features-hero {
         min-height: 280px !important;
@@ -475,5 +475,54 @@
     }
     .work_section_point img {
         width: 40px;
+    }
+    .cta_left h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .cta_left p, .cta_right p {
+        line-height: 24px;
+    }
+    span.me-4.h3 {
+        margin-right: 10px !important;
+    }
+    span.h4 {
+        font-size: 18px;
+    }
+    .accordion-body {
+        font-size: 16px;
+        padding-top: 0;
+        padding-left: 35px !important;
+        padding-right: 20px !important;
+    }
+    .heading_4 {
+        font-size: 26px;
+        line-height: 38px;
+        margin-top: 0;
+    }
+    footer {
+        padding-top: 35px;
+    }
+}
+@media only screen and (max-width: 320px){
+    section.features-hero {
+        background-position: -400px center;
+    }
+    .features-hero .hero-content {
+       width: 100% !important;
+    }
+    .features-hero .hero-content h1 {
+        font-size: 30px;
+        line-height: 36px;
+        width: 100% !important;
+    }
+    .features-hero .hero-content p {
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #5B5C81;
+    }
+    .hero-section {
+        min-height: 400px;
     }
 }

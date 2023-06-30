@@ -387,9 +387,12 @@ body {
     border-top: none !important;
 }
 
-.accordion-item:first-of-type .accordion-button {
+.accordion-item .accordion-button {
     border-radius: 0;
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: start;
 }
 
 .accordion-button:not(.collapsed) {
